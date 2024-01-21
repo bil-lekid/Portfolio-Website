@@ -1,23 +1,23 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import {Button} from 'react-scroll'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
-const Home = () => {
+const Home = ({animation}) => {
   return (
-    <div name="home" className="bg-[#0a192f] w-full h-screen">
+    <div data-aos={animation} name="home" className="bg-[#0a192f] w-full h-screen">
       {/* Container */}
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
-        <p className="text-pink-600">Hi, my name is</p>
-        <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">
-          Billy Huang
+        
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-300">Hi, my name is  
+        <span className="text-pink-600"> Billy Huang</span>
         </h1>
-        <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b0]">
-          I'm a Video editor and Data scientist
+        <h2 className="text-[20px] sm:text-[28px] md:text-[36px] font-bold text-gray-200">
+          I'm a <span className="border-b-2 border-pink-600">Video editor</span> / <span className="border-b-2 border-pink-600">content creator</span>
         </h2>
-        <p className="text-[#8892b0] py-4 max-w-[700px]">
-          I'm a data science enthusiast and a Video Editor / Content Creator.
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
-          sunt?
+        <p className="text-xl text-gray-200 py-4 max-w-[620px] text-justify">
+        A passionate Video Editor and Content Creator from Indonesia, Jakarta. Never shy of utilizing new technologies and non-stop improvement. Creator of two YouTube channels:
         </p>
         <div>
           <Button to="work" duration={500} smooth={true} className="group text-white border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600">
