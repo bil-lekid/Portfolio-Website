@@ -10,11 +10,12 @@ const Home = ({animation}) => {
       {/* Container */}
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
         
+        {/* Basic Info */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-300">Hi, my name is  
         <span className="text-pink-600"> Billy Huang</span>
         </h1>
         <h2 className="text-[20px] sm:text-[28px] md:text-[36px] font-bold text-gray-200">
-          I'm a <span className="border-b-2 border-pink-600">Video editor</span> / <span className="border-b-2 border-pink-600">content creator</span>
+          I'm a <span className="border-b-2 border-pink-600">Full Stack Engineer</span>
         </h2>
         <p className="text-xl text-gray-200 py-4 max-w-[620px] text-justify">
         A passionate Video Editor and Content Creator from Indonesia, Jakarta. Never shy of utilizing new technologies and non-stop improvement. Creator of two YouTube channels:
