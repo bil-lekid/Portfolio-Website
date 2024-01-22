@@ -19,7 +19,7 @@ function App() {
     <div className='bg-[#0a192f]'>
       <Navbar animation='fade-down' />
       <Home animation='flip-left'/>
-      <About />
+      <About animation='flip-left' />
       <Skills />
       <Work />
       <Contact />

@@ -9,7 +9,7 @@ import {
 import Logo from "../assets/gaben_PP.png";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { Link } from "react-scroll";
+import { Link, animateScroll } from "react-scroll";
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
@@ -69,12 +69,12 @@ const Navbar = ({animation}) => {
           </Link>
         </li>
         <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="about" smooth={true} duration={500}>
+          <Link isDynamic={true} onClick={handleClick} to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
         <li className="py-6 text-4xl">
-          <Link offset={-250} onClick={handleClick} to="skills" smooth={true} duration={500}>
+          <Link isDynamic={true} onClick={handleClick} to="skills" smooth={true} duration={500}>
             Skills
           </Link>
         </li>
