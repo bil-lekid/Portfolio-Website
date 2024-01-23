@@ -20,19 +20,19 @@ const Home = () => {
   return (
     <div className="bg-[#0a192f] w-full h-screen flex flex-col justify-center items-center">
       <img className="h-96 w-96 rounded-full object-cover border-4 border-pink-600 mb-10" src={Portrait} alt="billy" />
-      <div className="w-full grid grid-cols-3 gap-2 justify-stretch px-3 text-2xl" data-aos="flip-right">
+      <div className="w-full grid grid-cols-3 gap-2 justify-stretch px-3 text-xl md:text-2xl" data-aos="flip-right">
         <button onClick={() => navigate("/data-scientist")}
-        className="md:scale-150 h-[92px] w-[153px] text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto items-center">
+        className=" flex text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto items-center">
           Data Scientist
         </button>
         <button
           onClick={() => navigate("/video-editor")}
-          className="md:scale-150 h-[92px] w-[153px] text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto items-center"
+          className="flex text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto items-center"
         >
           Video Editor
         </button>
         <button onClick={() => navigate("/full-stack")}
-        className="md:scale-150 h-[92px] w-[153px] text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto items-center">
+        className="flex text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto items-center">
           Full Stack Engineer
         </button>
       </div>

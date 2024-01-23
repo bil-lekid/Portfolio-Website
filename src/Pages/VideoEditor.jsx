@@ -20,8 +20,8 @@ function App() {
       <Navbar animation='fade-down' />
       <Home animation='flip-left'/>
       <About animation='flip-left' />
-      <Skills />
-      <Work />
+      <Work animation='fade-in-right' />
+      <Skills animation='fade-in-right' />
       <Contact />
     </div>
   )
