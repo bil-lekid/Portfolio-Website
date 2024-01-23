@@ -13,6 +13,7 @@ const Contact = ({ animation }) => {
     >
       <form
         data-aos="zoom-in-right"
+        data-aos-once={true}
         method="POST"
         action="https://getform.io/f/f69ef934-cd94-4b64-86af-04a724b3d94c"
         className="flex flex-col max-w-[600px] w-full pt-20 my-auto mx-auto "
