@@ -2,13 +2,17 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-const Contact = () => {
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+const Contact = ({ animation }) => {
   return (
     <div
       name="contact"
       className="w-full h-screen bg-[#0a192f] p-4 pb-0 flex flex-col items-center"
     >
       <form
+        data-aos="zoom-in-right"
         method="POST"
         action="https://getform.io/f/f69ef934-cd94-4b64-86af-04a724b3d94c"
         className="flex flex-col max-w-[600px] w-full pt-20 my-auto mx-auto "

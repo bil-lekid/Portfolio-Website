@@ -19,10 +19,10 @@ function App() {
     <div className='bg-[#0a192f]'>
       <Navbar animation='fade-down' />
       <Home animation='flip-left'/>
-      <About animation='flip-left' />
+      <About animation='zoom-in-right' />
       <Work animation='fade-in-right' />
       <Skills animation='fade-in-right' />
-      <Contact />
+      <Contact aniamtion='zoom-in-right' />
     </div>
   )
 }

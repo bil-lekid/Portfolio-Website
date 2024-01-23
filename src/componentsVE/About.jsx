@@ -7,13 +7,13 @@ import { Element } from "react-scroll";
 const About = ({ animation }) => {
   return (
     <Element name="about">
-      <div
-        data-aos={animation}
-        data-aos-once="true"
-        className="w-full h-screen bg-[#0a192f] text-gray-300 flex flex-col justify-center pt-20 md:pt-0"
-      >
+      <div className="w-full h-screen bg-[#0a192f] text-gray-300 flex flex-col justify-center pt-20 md:pt-0">
         {/* container hitni_dota*/}
-        <div className="flex flex-col justify-center items-center gap-2 md:gap-4 max-w-[1000px] mx-auto px-8">
+        <div
+          data-aos={animation}
+          data-aos-once="true"
+          className="flex flex-col justify-center items-center gap-2 md:gap-4 max-w-[1000px] mx-auto px-8"
+        >
           <div className="flex justify-center gap-8 items-center ">
             <div>
               <p className="text-right underline decoration-pink-600 decoration-4 text-2xl md:text-4xl font-bold py-1">
@@ -21,10 +21,10 @@ const About = ({ animation }) => {
               </p>
               <div className="hidden md:inline">
                 <p className="text-xl text-justify max-w-[800px]">
-                  Hitni_dota is my personal Dota 2 channel that produces unique content by
-                  utilizing data science. The type of content involves short
-                  rampage videos uploaded on YouTube and TikTok, as well as
-                  watching Herald replays with very high scores .
+                  Hitni_dota is my personal Dota 2 channel that produces unique
+                  content by utilizing data science. The type of content
+                  involves short rampage videos uploaded on YouTube and TikTok,
+                  as well as watching Herald replays with very high scores .
                 </p>
               </div>
             </div>
@@ -38,10 +38,10 @@ const About = ({ animation }) => {
           </div>
           <div className="md:hidden">
             <p className="text-[1.8vh] md:text-base mx-4 text-justify">
-              Hitni_dota is my personal Dota 2 channel that produces unique content by
-              utilizing data science. The type of content involves short rampage
-              videos uploaded on YouTube and TikTok, as well as watching Herald
-              replays with very high scores .
+              Hitni_dota is my personal Dota 2 channel that produces unique
+              content by utilizing data science. The type of content involves
+              short rampage videos uploaded on YouTube and TikTok, as well as
+              watching Herald replays with very high scores .
             </p>
           </div>
           <Button
@@ -57,7 +57,11 @@ const About = ({ animation }) => {
           </Button>
         </div>
         {/* container DBHobbyTV*/}
-        <div className="flex flex-col justify-center items-center gap-2 md:gap-4 max-w-[1000px] mx-auto px-8">
+        <div
+          data-aos='zoom-in-left'
+          data-aos-once="true"
+          className="flex flex-col justify-center items-center gap-2 md:gap-4 max-w-[1000px] mx-auto px-8"
+        >
           <div className="flex justify-center gap-8 items-center shrink-0">
             <a className="shrink-0" href="https://www.youtube.com/@DBHobbyTV">
               <img
@@ -88,7 +92,8 @@ const About = ({ animation }) => {
               channel creates manhwa (Korean comic) narrative content to read
               and summarize manhwa. I am responsible for content planning, video
               editing, script writing, and video editing. Unfortunately the
-              channel has been discontinued due to video evidence copyright issues.
+              channel has been discontinued due to video evidence copyright
+              issues.
             </p>
           </div>
           <Button

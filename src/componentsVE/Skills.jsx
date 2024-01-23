@@ -11,9 +11,11 @@ import Mongo from "../assets/mongo.png";
 import AfterEffect from "../assets/skills/after-effect.png";
 import Gimp from "../assets/skills/gimp.png";
 
-const Skills = () => {
+const Skills = ({animation}) => {
   return (
     <div
+    data-aos-once={true}
+    data-aos={animation}
       name="skills"
       className="bg-[#0a192f] text-gray-300 w-full h-screen p-4"
     >
