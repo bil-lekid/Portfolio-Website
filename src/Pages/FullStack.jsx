@@ -1,30 +1,29 @@
-import { useState, useEffect } from 'react'
-import '../App.css'
-import Navbar from '../componentsFS/Navbar.jsx'
-import Home from '../componentsFS/Home.jsx'
-import About from '../componentsFS/About.jsx'
-import Work from '../componentsFS/Work.jsx'
-import Contact from '../componentsFS/Contact.jsx'
-import Skills from '../componentsFS/Skills.jsx'
-import Aos from 'aos'
-import 'aos/dist/aos.css'
+import { useState, useEffect } from "react";
+import "../App.css";
+import Navbar from "../componentsFS/Navbar.jsx";
+import Home from "../componentsFS/Home.jsx";
+import About from "../componentsFS/About.jsx";
+import Work from "../componentsFS/Work.jsx";
+import Contact from "../componentsFS/Contact.jsx";
+import Skills from "../componentsFS/Skills.jsx";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
   useEffect(() => {
-    Aos.init({duration:1000})
-  }, [])
-  
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
-    <div className='bg-[#0a192f]'>
-      <Navbar animation='fade-down' />
-      <Home animation='flip-left'/>
-      <About />
-      <Skills />
-      <Work />
-      <Contact />
+    <div className="bg-[#0a192f]">
+      <Navbar animation="fade-down" />
+      <Home animation="flip-left" />
+      <Work animation="fade-in-right" />
+      <Skills animation="fade-in-right" />
+      <Contact animation="zoom-in-right" />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
